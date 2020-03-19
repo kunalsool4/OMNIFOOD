@@ -27,7 +27,7 @@ html{
 .row {
 
 	margin: 0 auto;
-	width: 1140px;
+	width: 1040px;
 }
 
 header{
@@ -164,7 +164,8 @@ a:active{
 
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
 	display: inline-block;
 	padding: 10px 30px;
 	text-decoration: none;
@@ -173,7 +174,8 @@ a:active{
 	transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
 	background-color: #e67e22;
 	margin-top: 15px;
    	border: 1px solid #e67e22;
@@ -187,13 +189,17 @@ a:active{
 }
 
 .btn:hover,
-.btn:active{
+.btn:active,    
+input[type=submit]:hover,
+input[type=submit]:active{
 	background-color: #d35400;
 }
 
 .btn-full:hover,
-.btn-full:active{
-	color: #fff;	
+.btn-full:active,
+input[type=submit]{
+	color: #fff;
+	border: 1px solid #cf6d17
 }
 
 .btn-ghost:hover,
@@ -379,6 +385,20 @@ blockquote{
 	padding: 2%;
 	font-style: italic;
 	line-height: 145%;
+	position: relative;
+	margin-top: 40px;
+}
+
+ 
+blockquote:before{ 
+	content: "\201C";
+	font-size: 500%;
+	display: block;
+	position: block;
+	top: -5px;
+	left: -5px;
+	 
+	   
 }
 cite{
 	font-size: 90%;
@@ -395,6 +415,172 @@ cite img{
 }
 
 
+/*------------------ PLANS --------------------*/
+
+.section-plans{
+	padding-top: 8%;
+	padding-bottom: 8%;
+	background-color: #e8e8e8;
+}
+
+.plan-box {
+	background-color: #fff;
+	border-radius: 5px;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.plan-box div {
+	padding: 15px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-price{
+	font-size: 300%;
+	margin-bottom: 10px;
+	font-weight: 100;
+	color: #e67e22;
+}
+.plan-price-meal{
+	font-size: 80%;
+}
+
+
+.plan-price span{
+	font-size: 30%;
+	font-weight: 100;
+	
+	
+}	
+
+.plan-price-meal{
+	font-size: 80%;
+}
+	
+.plan-box ul{
+	list-style: none;
+}
+.plan-box ul li{
+	padding: 5px 0px;
+}
+
+.plan-box div:first-child{
+	background-color: #f4f4f4;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	
+}
+
+
+.plan-box div:last-child{
+	text-align: center;
+	border: 0;
+}
+
+
+/*------------------ FORMS --------------------*/
+
+.section-form {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+
+.contact-form{
+	width: 60%;
+	margin: 0 auto;
+	margin-right: 70%;
+	
+}
+
+input[typetext],
+input[typeemail],
+select,
+textarea{
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+textarea{
+	height: 100px;
+	
+}
+
+input[type=checkbox]{
+	margin: 10px 50px 10px 0;
+	
+}
+
+*:focus {outline : none;}
+
+/*------------------ FORMS --------------------*/
+
+
+footer{
+	background-color: #333;
+	color: #ddd;
+	padding: 5% 0 5% 0;
+	text-decoration: none;
+
+}
+
+.footer-nav{
+	list-style: none;
+	float: left;
+	border-bottom: color white 0px;
+}
+
+.social-links{
+	list-style: none;
+	float: right;
+	border-bottom: color white 0px;
+
+}
+
+.footer-nav li,
+.social-links li{
+	display: inline-block;
+	margin-right: 20px;
+	
+}
+.footer-nav li:last-child,
+.social-links li:last-child{
+	margin-right: 0;
+}
+
+.footer-nav li a:link;
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+	text-decoration: none;
+	border: 0;
+	color: #888; 
+	transition:  color 0.2s; 
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+	color: #ddd;
+}
+
+footer p{
+	color: #888;
+	text-align: center;
+	font-size: 90% ;
+	margin-top: 30px;
+}
+
+.footer-nav li a,
+.footer-nav li a,
+.social-links li a,
+.social-links li a{
+	color: #888;
+}
 
 
 
+.new div a{
+  text-decoration: none;	
+}
